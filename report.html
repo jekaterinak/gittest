@@ -1,0 +1,611 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>27</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" cellspacing="1" cellpadding="1" border="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">login</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">new_coupon_select_date_from_calendar</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">search_remove_coupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">new_coupon_enter_date_manually</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">search_remove_coupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult5">logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">login.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>css=#main input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>css=#main input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#main button</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=.btn.dropdown-toggle</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">new_coupon_select_date_from_calendar.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">new_coupon_select_date_from_calendar</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#accordion a[href=#collapseOne]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#accordion a[href=#collapseOne]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#accordion li&gt;a[href*=coupon]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#accordion li&gt;a[href*=coupon]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#content a[href*=create]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#content a[href*=create]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>storeEval</td>
+	<td>{'katrqa' + Math.floor(Math.random() * 10000);}</td>
+	<td>name</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>id=name</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>name=valid_date</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=.datepicker-days .day:not(.old):contains('28')"</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAt</td>
+	<td>css=.datepicker-days .day:not(.old):contains('28')"</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td>${name}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">search_remove_coupon.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">search_coupon</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=name</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=form.form-inline &gt; button</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>mouseOver</td>
+	<td>css=.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=button.confirm</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForNotVisible</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=name</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=form.form-inline &gt; button</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementNotPresent</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td>${name}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">new_coupon_enter_date_manually.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">new_coupon_enter_date_manually</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#accordion a[href=#collapseOne]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#accordion a[href=#collapseOne]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#accordion li&gt;a[href*=coupon]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#accordion li&gt;a[href*=coupon]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#content a[href*=create]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=#content a[href*=create]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>storeEval</td>
+	<td>{'katrqa' + Math.floor(Math.random() * 10000);}</td>
+	<td>name</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>id=name</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>name=valid_date</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2018-03-30</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td>${name}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">search_remove_coupon.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">search_coupon</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>name=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=name</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=form.form-inline &gt; button</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>mouseOver</td>
+	<td>css=.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=button.confirm</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForNotVisible</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=name</td>
+	<td>${name}</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=form.form-inline &gt; button</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementNotPresent</td>
+	<td>css=#content .table-responsive td:contains(${name})</td>
+	<td>${name}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult5">logout.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logout</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>css=.btn.dropdown-toggle</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=.btn.dropdown-toggle</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=.open a[href*=logout]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>waitForElementPresent</td>
+	<td>name=email</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/login.html
+info: Executing: |open | /oc-panel/auth/login |  |
+info: Executing: |type | css=#main input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=#main input[name=&apos;password&apos;] | demo |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=#main button |  |
+info: Executing: |waitForElementPresent | css=.btn.dropdown-toggle |  |
+info: Starting test /selenium-server/tests/new_coupon_select_date_from_calendar.html
+info: Executing: |open | /oc-panel |  |
+info: Executing: |waitForElementPresent | css=#accordion a[href=#collapseOne] |  |
+info: Executing: |click | css=#accordion a[href=#collapseOne] |  |
+info: Executing: |waitForElementPresent | css=#accordion li&gt;a[href*=coupon] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=#accordion li&gt;a[href*=coupon] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=#content a[href*=create] |  |
+info: Executing: |click | css=#content a[href*=create] |  |
+info: Executing: |waitForElementPresent | id=name |  |
+info: Executing: |click | id=name |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeEval | {&apos;katrqa&apos; + Math.floor(Math.random() * 10000);} | name |
+info: script is: {&apos;katrqa&apos; + Math.floor(Math.random() * 10000);}
+info: Executing: |type | id=name | ${name} |
+info: Executing: |click | name=valid_date |  |
+info: Executing: |waitForElementPresent | css=.datepicker-days .day:not(.old):contains(&apos;28&apos;)&quot; |  |
+info: Executing: |clickAt | css=.datepicker-days .day:not(.old):contains(&apos;28&apos;)&quot; |  |
+info: Executing: |click | name=submit |  |
+info: Executing: |waitForElementPresent | css=#content .table-responsive td:contains(${name}) | ${name} |
+info: Starting test /selenium-server/tests/search_remove_coupon.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | name=name |  |
+info: Executing: |type | name=name | ${name} |
+info: Executing: |click | css=form.form-inline &gt; button |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=#content .table-responsive td:contains(${name}) | ${name} |
+info: Executing: |mouseOver | css=.glyphicon-trash |  |
+info: Executing: |pause | 500 |  |
+info: Executing: |click | css=.glyphicon-trash |  |
+info: Executing: |waitForElementPresent | css=.showSweetAlert.visible |  |
+info: Executing: |click | css=button.confirm |  |
+info: Executing: |waitForNotVisible | css=#content .table-responsive td:contains(${name}) |  |
+info: Executing: |type | name=name | ${name} |
+info: Executing: |click | css=form.form-inline &gt; button |  |
+info: Executing: |waitForElementNotPresent | css=#content .table-responsive td:contains(${name}) | ${name} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/new_coupon_enter_date_manually.html
+info: Executing: |open | /oc-panel |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=#accordion a[href=#collapseOne] |  |
+info: Executing: |click | css=#accordion a[href=#collapseOne] |  |
+info: Executing: |waitForElementPresent | css=#accordion li&gt;a[href*=coupon] |  |
+info: Executing: |click | css=#accordion li&gt;a[href*=coupon] |  |
+info: Executing: |waitForElementPresent | css=#content a[href*=create] |  |
+info: Executing: |click | css=#content a[href*=create] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | id=name |  |
+info: Executing: |click | id=name |  |
+info: Executing: |storeEval | {&apos;katrqa&apos; + Math.floor(Math.random() * 10000);} | name |
+info: script is: {&apos;katrqa&apos; + Math.floor(Math.random() * 10000);}
+info: Executing: |type | id=name | ${name} |
+info: Executing: |click | name=valid_date |  |
+info: Executing: |type | name=valid_date | 2018-03-30 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | name=submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=#content .table-responsive td:contains(${name}) | ${name} |
+info: Starting test /selenium-server/tests/search_remove_coupon.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Executing: |waitForElementPresent | name=name |  |
+info: Executing: |type | name=name | ${name} |
+info: Executing: |click | css=form.form-inline &gt; button |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=#content .table-responsive td:contains(${name}) | ${name} |
+info: Executing: |mouseOver | css=.glyphicon-trash |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 500 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=.glyphicon-trash |  |
+info: Executing: |waitForElementPresent | css=.showSweetAlert.visible |  |
+info: Executing: |click | css=button.confirm |  |
+info: Executing: |waitForNotVisible | css=#content .table-responsive td:contains(${name}) |  |
+info: Executing: |type | name=name | ${name} |
+info: Executing: |click | css=form.form-inline &gt; button |  |
+info: Executing: |waitForElementNotPresent | css=#content .table-responsive td:contains(${name}) | ${name} |
+info: Starting test /selenium-server/tests/logout.html
+info: Executing: |open | /oc-panel |  |
+info: Executing: |waitForElementPresent | css=.btn.dropdown-toggle |  |
+info: Executing: |click | css=.btn.dropdown-toggle |  |
+info: Executing: |click | css=.open a[href*=logout] |  |
+info: Executing: |waitForElementPresent | name=email |  |
+</pre></body></html>
